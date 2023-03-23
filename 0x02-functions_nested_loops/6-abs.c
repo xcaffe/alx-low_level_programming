@@ -2,15 +2,18 @@
 
 /**
  * _abs - absolute value check
- * @c: parameter to print
+ * @c: input number as integer
  * Return: Value c
  */
 
 int _abs(int c)
 {
-	if (c < 0)
-		c = -(c);
-	else if (c >= 0)
-		c = c;
-	return (c);
+	if (c >= 0)
+	{
+		return (c);
+	}
+	else
+	{
+		return (c * -1);
+	}
 }

@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _isdigit - function checks for a digit.
+ * print_numbers - function checks for a digit.
  * @c: input variable
  * Return: 1 or 0 should be the value.
  */
-int _isdigit(int c)
+void print_numbers(void)
 {
-        if (c >= 0 && c <= 9)
+        if (c >= 0 ; && c <= 9)
         return (1);
         else
         return (0);

@@ -3,7 +3,7 @@
 /**
  * print_line - function prints line
  * @n: declare variable
- * Return: 0-9 should be the value.
+ * Return: straight line:
  */
 void print_line(int n)
 {
@@ -15,10 +15,10 @@ void print_line(int n)
 	}
 	else
 	{
-		for (c = 1; c <= n; i++)
-		{
-		_putchar('_');
-		}
+	for (c = 1; c <= n; c++)
+	{
+		_putchar(95);
+	}
 		_putchar('\n');
 	}
 }

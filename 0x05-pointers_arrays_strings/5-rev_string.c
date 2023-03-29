@@ -1,17 +1,20 @@
 #include "main.h"
+#include <string.h>
 /**
- * print_rev - print string in reverse
+ * rev_string - print string in reverse
  * @s: pointer parameter variable
  * Return: 0
  */
-void print_rev(char *s)
+void rev_string(char *s);
 {
-        int i;
-        int str = 0;
+	int i;
+	int len = strlen(s);
 
-        for (i = 0; s[i] != '\0'; i++)
-                str++;
-        for (i = str; i >= 0; i--)
-                _putchar(s[i]);
-        _putchar('\n');
+	for (i = len - 1; i >= 0; i--)
+	{
+		char ch = str[i];
+
+		str[i] = str[len - i - 1];
+		str[len - i - 1] = ch;
+	}
 }

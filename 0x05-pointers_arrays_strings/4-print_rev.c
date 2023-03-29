@@ -6,7 +6,7 @@
  */
 void print_rev(char *s)
 {
-        int i, j;
+        int i, j, rev;
         int count = 0;
 
         while (s[i] != '\0';)
@@ -16,7 +16,7 @@ void print_rev(char *s)
 	j = count - 1;
         for (i = 0; i < count; i++)
 	{
-		rev[i] = str[j];
+		rev[i] = s[j];
 		j--;
 	}
 	_putchar(rev);

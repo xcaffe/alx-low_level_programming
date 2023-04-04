@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _memcpy - Copies byte from one memory area to another memory area
+ * _memset - fills memory with a constant byte
  * @b: constant byte
  * @s: pointed memory area
  * @n: bytes

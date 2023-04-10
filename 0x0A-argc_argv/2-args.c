@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - prints the number of arguments passed into it
+ * main - prints all arguments it receives
  * @argc: count of the argument
  * @argv: array of pointer to the string
  * comment: char *argv[] is equivalent to char **argv
@@ -9,7 +9,11 @@
  */
 int main(int argc, char *argv[])
 {
-	(void) argv;
-	printf("%d\n", argc - 1);
+	int a;
+
+	for (a = 0; a < argc; a++)
+	{
+		printf("%s\n", argv[a]);
+	}
 	return (0);
 }

@@ -8,35 +8,25 @@
  * @argv: array of poiner argument
  * Return: 0
  */
-int main(int _attribute_((_unused_)) argc, char *argv[])
+int main(int argc, char *argv[])
 {
-	int num1 = 0;
-	int num2 = 0;
-	char *op;
+	int (*oprt)(int, int);
 
 	if (argc != 4)
 	{
 		printf("Error\n");
-		exist(98);
+		exit(98);
 	}
 
-	num1 = atoi(argv[1]);
-	op = argv[2];
-	num2 = atoi(argv[3]);
+	oprt = get_op_func(argv[2]);
 
-	if (get_op_func(op) == NULL || op[1] != '\0')
+	if (!oprt)
 	{
 		printf("Error\n");
-		exist(99);
+		exit(99);
 	}
-
-	if ((*op == '/' && num2 == 0) || (*op == '%' && num2 == 0))
-	{
-		printf("Error\n");
-		exist(100);
-	}
-
-	print ("%d\n", get_op_func(op)(num1, num2));
+	
+	printf("%d\n", oprt(atoi(argv[1]), atoi(argv[3])));
 
 	return (0);
 }

@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "3-calc.h"
 /**
- * main - reult of simple operations
+ * main - result of simple operations
  * @argc: number of argument
  * @argv: array of poiner argument
  * Return: 0

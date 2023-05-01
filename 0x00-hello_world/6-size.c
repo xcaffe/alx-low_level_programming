@@ -1,4 +1,4 @@
-#include <istdio.h>
+#include <stdio.h>
 /**
  * main - this is the main program
  *

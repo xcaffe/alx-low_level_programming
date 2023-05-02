@@ -23,9 +23,9 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 
 	while (a < index - 1)
 	{
-		if (!cay || !(cay->next))
+		if (!fay || !(fay->next))
 			return (-1);
-		cay = cay->next;
+		fay = fay->next;
 		a++;
 	}
 

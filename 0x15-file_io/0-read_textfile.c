@@ -5,7 +5,7 @@
  * read_textfile - reads and prints number of letters in POSIX standard output
  * @filename: text file to be read from
  * @letters: numbers of letters it should read and print
- * Return: 0 if file name is 0 and if write fails or does not write the expected amount of bytes
+ * Return: 0 if filename is 0 & fails or not write expected amount of bytes
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
